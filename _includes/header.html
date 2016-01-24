@@ -1,5 +1,10 @@
-<header>
-<nav>
+<header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+  <nav>
 <ul>
     <a href="index.html"><li>Home</li></a>
 	<a href="blog.html"><li>Blog</li></a>
@@ -9,21 +14,6 @@
     <hgroup>
         <h1>PixelPaper</h1>
     </hgroup>
-</header>
-=======
-<header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <ul>
-           <li><a href="profile.html">Profile</a></li>
-           <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </a>
 
       <div class="trigger">
         {% for my_page in site.pages %}
